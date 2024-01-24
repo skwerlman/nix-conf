@@ -28,5 +28,8 @@
         popups = 12;
       };
     };
+    targets = {
+      gtk.enable = true;
+    };
   };
 }
