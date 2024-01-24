@@ -6,5 +6,5 @@
     ./user.nix
   ];
 
-  stylix = import ./config/style.nix;
+  stylix = import ./style.nix;
 }
