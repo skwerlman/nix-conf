@@ -4,6 +4,6 @@
   home-manager.useUserPackages = true;
   imports = [
     ./user.nix
-    ./style.nix
+    ./system-style.nix
   ];
 }
