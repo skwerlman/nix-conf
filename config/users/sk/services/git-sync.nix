@@ -1,0 +1,5 @@
+{
+  services.git-sync = {
+    #TODO
+  };
+}
