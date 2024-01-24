@@ -1,5 +1,9 @@
 {
   services = {
+    greetd = {
+      enable = true;
+    };
+
     pipewire = {
       enable = true;
       pulse.enable = true;
