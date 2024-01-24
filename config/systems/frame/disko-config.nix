@@ -72,7 +72,7 @@
                   ];
                 };
                 "/home/sk" = {
-                  mountpoint = "/";
+                  mountpoint = "/home/sk";
                   mountOptions = [
                     "compress-force=zstd:5"
                     "noatime"
@@ -84,7 +84,7 @@
                   ];
                 };
                 "/nix" = {
-                  mountpoint = "/";
+                  mountpoint = "/nix";
                   mountOptions = [
                     "compress-force=zstd:5"
                     "noatime"
@@ -96,7 +96,7 @@
                   ];
                 };
                 "/var/log" = {
-                  mountpoint = "/";
+                  mountpoint = "/var/log";
                   mountOptions = [
                     "compress-force=zstd:5"
                     "noatime"
@@ -108,7 +108,7 @@
                   ];
                 };
                 "/var/lib" = {
-                  mountpoint = "/";
+                  mountpoint = "/var/lib";
                   mountOptions = [
                     "compress-force=zstd:5"
                     "noatime"
