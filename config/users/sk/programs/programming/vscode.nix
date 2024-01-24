@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.vscode = {
     enable = true;
@@ -21,7 +21,7 @@
     ];
     userSettings = {
       "editor.formatOnSave" = true;
-      "workbench.colorTheme" = "dark+(elixir)";
+      "workbench.colorTheme" = lib.mkForce "dark+(elixir)";
       "window.zoomLevel" = 1;
       "elixir.credo.checkWithoutTag" = [ "no_editor" ];
     };
