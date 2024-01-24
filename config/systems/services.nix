@@ -16,5 +16,9 @@
     fwupd = {
       enable = true;
     };
+
+    blueman = {
+      enable = true;
+    };
   };
 }
