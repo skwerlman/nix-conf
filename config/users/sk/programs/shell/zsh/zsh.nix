@@ -3,7 +3,7 @@
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
-    enableCompletin = true;
+    enableCompletion = true;
     enableVteIntegration = true;
     dotDir = "${config.xdg.configHome}/zsh";
     history = {
