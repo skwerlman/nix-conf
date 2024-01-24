@@ -6,7 +6,6 @@
     recommendedEnvironment = true;
     xwayland = {
       enable = true;
-      hidpi = false;
     };
     nvidiaPatches = false;
     extraConfig = builtins.readFile ../../../resources/conf/hyprland.conf +
