@@ -15,6 +15,10 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # lanzaboote = {
+    #   url = "github:nix-community/lanzaboote/v0.3.0";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = { nixpkgs, stylix, disko, home-manager, ... }@inputs: {
@@ -24,6 +28,7 @@
 
         modules = [
           disko.nixosModules.disko
+          # lanzaboote.nixosModules.lanzaboote
           stylix.nixosModules.stylix
           ./config/systems
           ./config/systems/frame

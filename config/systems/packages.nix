@@ -7,6 +7,7 @@
     nano
     wget
     curl
+    # sbctl
   ];
 
   fonts.packages = with pkgs; [

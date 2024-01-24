@@ -13,6 +13,11 @@
       efi.canTouchEfiVariables = true;
     };
 
+    # lanzaboote = {
+    #   enable = true;
+    #   pkiBundle = "/etc/secureboot";
+    # };
+
     plymouth = {
       enable = true;
     };
