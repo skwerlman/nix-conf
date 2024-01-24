@@ -12,8 +12,8 @@ in
       enable = true;
       settings = {
         background = {
-          path = ../../resources/wallpaper/ludens.jpg;
-          fit = "Cover";
+          path = ../../resources/wallpaper/racetrack.jpg;
+          fit = "Contain";
         };
         GTK = {
           application_prefer_dark_theme = true;

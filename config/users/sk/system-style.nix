@@ -2,7 +2,7 @@
 
 {
   stylix = {
-    image = ../../../resources/wallpaper/ludens.jpg;
+    image = ../../../resources/wallpaper/racetrack.jpg;
     polarity = "dark";
     fonts = {
       serif = {
