@@ -1,5 +1,9 @@
 {
   boot = {
+    bootspec = {
+      enable = true;
+    };
+
     loader = {
       systemd-boot = {
         enable = true;
