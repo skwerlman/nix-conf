@@ -1,8 +1,9 @@
-{ config, pkgs, common-attrs, ... }:
+{ config, pkgs, ... }:
 let
   regreet-override = pkgs.greetd.regreet.overrideAttrs (final: prev: {
     SESSION_DIRS = "${config.services.xserver.displayManager.sessionData.desktops}/share";
   });
+  theme = "Stylix";
 in
 {
   programs = {
@@ -16,10 +17,10 @@ in
         };
         GTK = {
           application_prefer_dark_theme = true;
-          theme_name = common-attrs.gtk-theme.cursorTheme.name;
-          icon_theme_name = common-attrs.gtk-theme.cursorTheme.name;
-          cursor_theme_name = common-attrs.gtk-theme.cursorTheme.name;
-          font_name = "${common-attrs.gtk-theme.font.name} 12";
+          theme_name = theme;
+          icon_theme_name = theme;
+          cursor_theme_name = theme;
+          font_name = "Noto Sans 12";
         };
       };
     };
