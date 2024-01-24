@@ -1,6 +1,12 @@
 {
-  hardware.enableAllFirmware = true;
-  hardware.opengl = {
-    enable = true;
+  hardware = {
+    bluetooth = {
+      enable = true;
+      powerOnBoot = true;
+    };
+    enableAllFirmware = true;
+    opengl = {
+      enable = true;
+    };
   };
 }
