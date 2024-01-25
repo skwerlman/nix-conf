@@ -24,5 +24,9 @@
     thermald = {
       enable = true;
     };
+
+    gpm = {
+      enable = true;
+    };
   };
 }
