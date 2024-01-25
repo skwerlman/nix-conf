@@ -20,5 +20,9 @@
     blueman = {
       enable = true;
     };
+
+    thermald = {
+      enable = true;
+    };
   };
 }

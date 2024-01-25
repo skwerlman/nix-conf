@@ -42,5 +42,8 @@
     EDITOR = "nano";
   };
 
+  powerManagement.cpuFreqGovernor = "powersave";
+  powerManagement.powertop.enable = true;
+
   system.stateVersion = "23.11";
 }

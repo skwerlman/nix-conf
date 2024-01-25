@@ -8,5 +8,8 @@
     opengl = {
       enable = true;
     };
+    sensor = {
+      hddtemp.enable = true;
+    };
   };
 }
