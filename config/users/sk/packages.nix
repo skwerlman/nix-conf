@@ -34,6 +34,7 @@ let
   ];
 
   system-utils = with pkgs; [
+    libnotify
     sysstat
     lm_sensors
     pciutils
