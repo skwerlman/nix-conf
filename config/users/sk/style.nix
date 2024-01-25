@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   stylix = {
     targets = {
@@ -9,7 +9,7 @@
 
   gtk = {
     enable = true;
-    theme = { name = "Stylix"; };
+    theme = { name = lib.mkForce "Stylix"; };
     iconTheme = {
       name = "Papirus-Dark";
       package = pkgs.papirus-icon-theme;
