@@ -44,6 +44,8 @@
     EDITOR = "nano";
   };
 
+  fonts.fontDir.enable = true;
+
   powerManagement.cpuFreqGovernor = "powersave";
   powerManagement.powertop.enable = true;
 
