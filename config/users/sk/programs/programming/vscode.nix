@@ -7,6 +7,8 @@
       hie.enable = false;
     };
     extensions = with pkgs.vscode-extensions; [
+      christian-kohler.path-intellisense
+      elixir-lsp.vscode-elixir-ls
       gitlab.gitlab-workflow
       haskell.haskell
       justusadam.language-haskell
