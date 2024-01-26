@@ -24,6 +24,7 @@
       "workbench.colorTheme" = lib.mkForce "dark+(elixir)";
       "window.zoomLevel" = 1;
       "elixir.credo.checkWithoutTag" = [ "no_editor" ];
+      "editor.fontLigatures" = true;
     };
   };
 }
