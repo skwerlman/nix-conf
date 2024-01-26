@@ -25,7 +25,15 @@
       enable = true;
     };
 
+    smartd = {
+      enable = true;
+    };
+
     gpm = {
+      enable = true;
+    };
+
+    netdata = {
       enable = true;
     };
   };
