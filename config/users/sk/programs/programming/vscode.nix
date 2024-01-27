@@ -23,7 +23,7 @@ let
     kkalita.dark-plus-elixir
     royalmist.vscode-eex-format
     adamzapasnik.elixir-test-explorer
-    szTheory.hex-lens
+    sztheory.hex-lens
     fnando.linter
     pomdtr.markdown-kroki
   ];
