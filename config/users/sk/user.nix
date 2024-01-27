@@ -1,6 +1,5 @@
 { config, lib, pkgs, stylix, nix-vscode-extensions, ... }:
 {
-  home-manager.extraSpecialArgs = nix-vscode-extensions;
   home-manager.users.sk = {
     imports = [
       ./packages.nix
