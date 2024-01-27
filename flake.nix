@@ -15,17 +15,22 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-vscode-extensions = {
+      url = "github:nix-community/nix-vscode-extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # lanzaboote = {
     #   url = "github:nix-community/lanzaboote/v0.3.0";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
   };
 
-  outputs = { nixpkgs, stylix, disko, home-manager, ... }@inputs: {
+  outputs = { nixpkgs, stylix, disko, home-manager, nix-vscode-extensions, ... }@inputs: {
     nixosConfigurations = {
       "frame" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
+        specialArgs = inputs;
         modules = [
           disko.nixosModules.disko
           # lanzaboote.nixosModules.lanzaboote

@@ -1,4 +1,30 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, nix-vscode-extensions, ... }:
+let
+  vscode-exts = nix-vscode-extensions.extensions.x86_64-linux;
+  ovsx = vscode-exts.open-vsx-release;
+
+  exts-nix = with pkgs.vscode-extensions; [
+    christian-kohler.path-intellisense
+    elixir-lsp.vscode-elixir-ls
+    gitlab.gitlab-workflow
+    haskell.haskell
+    justusadam.language-haskell
+    kamikillerto.vscode-colorize
+    mechatroner.rainbow-csv
+    ms-python.python
+    ms-python.vscode-pylance
+    ms-vsliveshare.vsliveshare
+    phoenixframework.phoenix
+    tamasfe.even-better-toml
+    timonwong.shellcheck
+  ];
+
+  exts-vsm = with vscode-exts.vscode-marketplace-release; [
+    activitywatch.aw-watcher-vscode
+  ];
+
+  exts = exts-nix ++ exts-vsm;
+in
 {
   programs.vscode = {
     enable = true;
@@ -6,21 +32,7 @@
       enable = true;
       hie.enable = false;
     };
-    extensions = with pkgs.vscode-extensions; [
-      christian-kohler.path-intellisense
-      elixir-lsp.vscode-elixir-ls
-      gitlab.gitlab-workflow
-      haskell.haskell
-      justusadam.language-haskell
-      kamikillerto.vscode-colorize
-      mechatroner.rainbow-csv
-      ms-python.python
-      ms-python.vscode-pylance
-      ms-vsliveshare.vsliveshare
-      phoenixframework.phoenix
-      tamasfe.even-better-toml
-      timonwong.shellcheck
-    ];
+    extensions = exts;
     userSettings = {
       "editor.formatOnSave" = true;
       "workbench.colorTheme" = lib.mkForce "dark+(elixir)";
