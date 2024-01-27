@@ -8,6 +8,7 @@
         format = " [╭─$user]($style)@";
         style_user = "bold red";
         style_root = "bold red";
+        show_always = true;
       };
 
       hostname = {
