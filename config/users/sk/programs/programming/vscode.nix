@@ -1,6 +1,6 @@
-{ pkgs, lib, nix-vscode-extensions, ... }:
+{ pkgs, lib, inputs, ... }:
 let
-  vscode-exts = nix-vscode-extensions.extensions.x86_64-linux;
+  vscode-exts = inputs.nix-vscode-extensions.extensions.x86_64-linux;
   ovsx = vscode-exts.open-vsx-release;
 
   exts-nix = with pkgs.vscode-extensions; [
