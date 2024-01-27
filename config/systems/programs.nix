@@ -10,6 +10,7 @@ in
     zsh = {
       enable = true;
     };
+
     regreet = {
       package = regreet-override;
       enable = true;
@@ -32,5 +33,9 @@ in
   qt = {
     enable = true;
     platformTheme = "qt5ct";
+  };
+
+  steam = {
+    enable = true;
   };
 }
