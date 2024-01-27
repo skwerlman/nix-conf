@@ -2,6 +2,9 @@
 {
   stylix = {
     targets = {
+      kde.enable = true;
+      gnome.enable = true;
+      gtk.enable = true;
       kitty.variant256Colors = true;
       swaylock.useImage = true;
     };
