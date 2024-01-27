@@ -17,6 +17,6 @@
     syntaxHighlighting = {
       enable = true;
     };
-    zprof.enable = true;
+    # zprof.enable = true;
   };
 }
