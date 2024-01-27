@@ -28,4 +28,9 @@ in
       };
     };
   };
+
+  qt = {
+    enable = true;
+    platformTheme = "qtct";
+  };
 }
