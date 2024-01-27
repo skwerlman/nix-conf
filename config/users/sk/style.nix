@@ -15,4 +15,13 @@
       package = pkgs.papirus-icon-theme;
     };
   };
+
+  qt = {
+    enable = true;
+    platformTheme = "qtct";
+    iconTheme = {
+      name = "Papirus-Dark";
+      package = pkgs.papirus-icon-theme;
+    };
+  };
 }
