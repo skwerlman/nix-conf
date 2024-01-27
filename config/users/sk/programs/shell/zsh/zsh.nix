@@ -5,7 +5,8 @@
     enableAutosuggestions = true;
     enableCompletion = true;
     enableVteIntegration = true;
-    dotDir = "${config.xdg.configHome}/zsh";
+    # dotDir is prefixed with $HOME so we cant use an absolute path :(
+    dotDir = ".config/zsh";
     history = {
       extended = true;
       path = "${config.xdg.configHome}/zsh/history";
