@@ -3,5 +3,6 @@
     ./avizo.nix
     ./batsignal.nix
     ./devilspie2.nix
+    ./dunst.nix
   ];
 }
