@@ -28,14 +28,14 @@ in
         };
       };
     };
+
+    steam = {
+      enable = true;
+    };
   };
 
   qt = {
     enable = true;
     platformTheme = "qt5ct";
-  };
-
-  steam = {
-    enable = true;
   };
 }
