@@ -38,6 +38,7 @@
   users.users.sk = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
+    shell = pkgs.zsh;
   };
 
   environment.variables = {
