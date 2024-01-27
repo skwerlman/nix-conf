@@ -30,6 +30,7 @@
       "frame" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
+        specialArgs = inputs;
         modules = [
           disko.nixosModules.disko
           # lanzaboote.nixosModules.lanzaboote
@@ -38,7 +39,6 @@
           ./config/systems/frame
           home-manager.nixosModules.home-manager
           {
-            extraSpecialArgs = inputs;
             imports = [
               ./config/users/sk
             ];
