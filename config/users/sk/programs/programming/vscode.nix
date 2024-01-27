@@ -36,7 +36,7 @@ let
     joaompinto.vscode-graphviz
     jnoortheen.nix-ide
     claui.packaging
-    ms-vscode.test-adapter-converter
+    hbenl.test-adapter-converter
     hbenl.vscode-test-explorer
   ];
 
