@@ -25,7 +25,7 @@
     # };
   };
 
-  outputs = { nixpkgs, stylix, disko, home-manager, nix-vscode-extensions, ... }@inputs: {
+  outputs = inputs@{ nixpkgs, stylix, disko, home-manager, ... }: {
     nixosConfigurations = {
       "frame" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
