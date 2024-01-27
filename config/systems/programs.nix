@@ -7,6 +7,9 @@ let
 in
 {
   programs = {
+    zsh = {
+      enable = true;
+    };
     regreet = {
       package = regreet-override;
       enable = true;
