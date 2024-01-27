@@ -30,6 +30,7 @@
     };
     targets = {
       gtk.enable = true;
+      kde.enable = true;
     };
   };
 }
