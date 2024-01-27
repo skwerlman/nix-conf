@@ -12,7 +12,6 @@
 
   gtk = {
     enable = true;
-    theme = { name = lib.mkForce "Stylix"; };
     iconTheme = {
       name = "Papirus-Dark";
       package = pkgs.papirus-icon-theme;
