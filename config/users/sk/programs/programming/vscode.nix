@@ -26,6 +26,7 @@ let
     sztheory.hex-lens
     fnando.linter
     pomdtr.markdown-kroki
+    hbenl.vscode-test-explorer-liveshare
   ];
 
   exts-vsx = with vscode-exts.open-vsx; [
@@ -36,7 +37,6 @@ let
     jnoortheen.nix-ide
     claui.packaging
     ms-vscode.test-adapter-converter
-    hbenl.vscode-test-explorer-liveshare
     hbenl.vscode-test-explorer
   ];
 
