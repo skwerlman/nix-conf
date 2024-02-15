@@ -10,6 +10,7 @@
         height = 36;
         spacing = 4;
         modules-left = [
+          "clock"
           "hyprland/workspaces"
           "hyprland/submap"
           "custom/media"
@@ -18,7 +19,6 @@
           "hyprland/window"
         ];
         modules-right = [
-          "mpd"
           "idle_inhibitor"
           "pulseaudio"
           "network"
@@ -26,10 +26,7 @@
           "memory"
           "temperature"
           "backlight"
-          "keyboard-state"
-          "hyprland/language"
           "battery"
-          "clock"
           "tray"
         ];
 
