@@ -45,7 +45,7 @@
 
   users.users.sk = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "gputop" ];
+    extraGroups = [ "wheel" "networkmanager" "gputop" "input" ];
     shell = pkgs.zsh;
   };
   users.groups.gputop = { };
