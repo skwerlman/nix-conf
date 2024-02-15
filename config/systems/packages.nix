@@ -7,6 +7,7 @@
     nano
     wget
     curl
+    dmidecode
     # sbctl
   ];
 
