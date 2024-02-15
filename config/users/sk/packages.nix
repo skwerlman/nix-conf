@@ -68,7 +68,7 @@ let
 
   misc = with pkgs; [
     nix-output-monitor
-    nixpkg-fmt
+    nixpkgs-fmt
   ];
 in
 {
