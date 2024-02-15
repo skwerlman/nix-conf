@@ -71,6 +71,8 @@ let
   misc = with pkgs; [
     nix-output-monitor
     nixpkgs-fmt
+    glxinfo
+    vkcube
   ];
 in
 {
