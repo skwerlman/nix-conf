@@ -35,6 +35,9 @@
 
       # 4GB of hugepages
       "hugepagesz=2MB" "hugepages=2048"
+
+      # IOMMU support
+      "intel_iommu=on" "iommu=pt"
     ];
     kernelModules = [ "coretemp" ];
   };
