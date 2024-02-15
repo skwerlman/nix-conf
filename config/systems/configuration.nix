@@ -35,6 +35,8 @@
     polkit.enable = true;
     wrappers = {
       intel_gpu_top = {
+        owner = "root";
+        group = "gputop";
         capabilities = "cap_perfmon=+ep";
         source = "${pkgs.intel-gpu-tools.out}/bin/intel_gpu_top";
       };
@@ -43,18 +45,20 @@
 
   users.users.sk = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "gputop" ];
     shell = pkgs.zsh;
   };
+  users.groups.gputop =
+    { }
 
-  environment.variables = {
-    EDITOR = "nano";
-  };
+      environment.variables = {
+  EDITOR = "nano";
+};
 
-  fonts.fontDir.enable = true;
+fonts.fontDir.enable = true;
 
-  powerManagement.cpuFreqGovernor = "powersave";
-  powerManagement.powertop.enable = true;
+powerManagement.cpuFreqGovernor = "powersave";
+powerManagement.powertop.enable = true;
 
-  system.stateVersion = "23.11";
+system.stateVersion = "23.11";
 }
