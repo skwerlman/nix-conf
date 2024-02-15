@@ -33,6 +33,12 @@
     rtkit.enable = true;
     pam.services.swaylock = { };
     polkit.enable = true;
+    wrappers = {
+      intel_gpu_top = {
+        capabilities = "cap_perfmon=+ep";
+        source = "${pkgs.intel-gpu-tools.out}/bin/intel_gpu_top";
+      };
+    };
   };
 
   users.users.sk = {
