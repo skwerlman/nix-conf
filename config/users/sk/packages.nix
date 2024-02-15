@@ -41,6 +41,7 @@ let
     usbutils
     iotop
     iftop
+    intel-gpu-tools
   ];
 
   cli-utils = with pkgs; [
