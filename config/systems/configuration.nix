@@ -48,17 +48,16 @@
     extraGroups = [ "wheel" "networkmanager" "gputop" ];
     shell = pkgs.zsh;
   };
-  users.groups.gputop =
-    { }
+  users.groups.gputop = { };
 
-      environment.variables = {
-  EDITOR = "nano";
-};
+  environment.variables = {
+    EDITOR = "nano";
+  };
 
-fonts.fontDir.enable = true;
+  fonts.fontDir.enable = true;
 
-powerManagement.cpuFreqGovernor = "powersave";
-powerManagement.powertop.enable = true;
+  powerManagement.cpuFreqGovernor = "powersave";
+  powerManagement.powertop.enable = true;
 
-system.stateVersion = "23.11";
+  system.stateVersion = "23.11";
 }
