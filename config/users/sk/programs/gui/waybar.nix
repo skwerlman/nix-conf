@@ -6,13 +6,12 @@
         height = 30;
         spacing = 4;
         modules-left = [
-          "sway/workspaces"
-          "sway/mode"
-          "sway/scratchpad"
+          "hyprland/workspaces"
+          "hyprland/submap"
           "custom/media"
         ];
         modules-center = [
-          "sway/window"
+          "hyprland/window"
         ];
         modules-right = [
           "mpd"
@@ -24,7 +23,7 @@
           "temperature"
           "backlight"
           "keyboard-state"
-          "sway/language"
+          "hyprland/language"
           "battery"
           "battery#bat2"
           "clock"
@@ -41,16 +40,8 @@
           };
         };
 
-        "sway/mode" = {
+        "hyprland/submap" = {
           format = "<span style=\"italic\">{}</span>";
-        };
-
-        "sway/scratchpad" = {
-          format = "{icon} {count}";
-          show-empty = false;
-          format-icons = [ "" "" ];
-          tooltip = true;
-          tooltip-format = "{app}: {title}";
         };
 
         mpd = {
