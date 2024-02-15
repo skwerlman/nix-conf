@@ -25,7 +25,6 @@
           "keyboard-state"
           "hyprland/language"
           "battery"
-          "battery#bat2"
           "clock"
           "tray"
         ];
@@ -127,10 +126,6 @@
           # format-good = ""; # An empty format will hide the module
           # format-full = "";
           format-icons = [ "" "" "" "" "" ];
-        };
-
-        "battery#bat2" = {
-          bat = "BAT2";
         };
 
         network = {
