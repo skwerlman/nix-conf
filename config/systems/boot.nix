@@ -29,7 +29,13 @@
     initrd.systemd.enable = true;
     initrd.verbose = false;
     consoleLogLevel = 0;
-    kernelParams = [ "quiet" "udev.log_level=3" ];
+    kernelParams = [
+      # quite boot for plymouth
+      "quiet" "udev.log_level=3"
+
+      # 4GB of hugepages
+      "hugepagesz=2MB" "hugepages=2048"
+    ];
     kernelModules = [ "coretemp" ];
   };
 }
