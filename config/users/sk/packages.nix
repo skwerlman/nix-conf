@@ -72,7 +72,7 @@ let
     nix-output-monitor
     nixpkgs-fmt
     glxinfo
-    vkcube
+    vulkan-info
   ];
 in
 {
