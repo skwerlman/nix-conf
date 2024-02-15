@@ -8,6 +8,8 @@
     wget
     curl
     dmidecode
+    powertop
+    bat
     # sbctl
   ];
 
