@@ -15,7 +15,7 @@
         ];
         modules-right = [
           "mpd"
-          "idle_inhibitpr"
+          "idle_inhibitor"
           "pulseaudio"
           "network"
           "cpu"
