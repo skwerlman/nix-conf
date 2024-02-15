@@ -21,6 +21,7 @@ let
     prismlauncher
     dolphin-emu
     lutris
+    gamemode
   ];
 
   networking = with pkgs; [
